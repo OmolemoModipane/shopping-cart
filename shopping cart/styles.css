@@ -1,0 +1,173 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+
+h1 {
+  font-size: 5rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Georgia";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-text-stroke: 1px rgb(204, 42, 136);
+  text-shadow: 0px 2px 4px white;
+}
+.hover1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Georgia";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  cursor: pointer;
+  width: 70px;
+  height: 50px;
+}
+
+.hover1:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    white,
+    grey,
+    pink,
+    rgb(178, 11, 78),
+    purple
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.hover1:active {
+  color: #000;
+}
+
+.hover1:active:after {
+  background: transparent;
+}
+
+.hover1:hover:before {
+  opacity: 1;
+}
+
+.hover1:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+ {
+  box-sizing: border-box;
+}
+
+/* Button used to open the contact form */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid black;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background: radial-gradient(
+    circle,
+    rgba(213, 168, 188, 1) 0%,
+    rgba(53, 52, 53, 1) 100%
+  );
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: black;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: black;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}

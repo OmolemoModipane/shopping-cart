@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Style Sync</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <video autoplay muted loop>
+      <source src="images/1154850-hd_1920_1080_24fps.mp4" type="video/mp4" />
+    </video>
+    <h1>
+      STYLE
+      <br />
+      <br />
+      SYNC
+    </h1>
+    <a href="clothing.html">
+      <button class="hover1" type="button">Shop Now</button></a
+    >
+
+    <button class="open-button" onclick="openForm()">
+      Want to Receive Sale Updates? SIGN UP NOW
+    </button>
+
+    <div class="form-popup" id="newsLetter">
+      <form action="/action_page.php" class="form-container">
+        <h2>Newsletter</h2>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required />
+
+        <button type="submit" class="btn">Sign Up</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">
+          Close
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
