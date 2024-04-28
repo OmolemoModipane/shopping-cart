@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SS Payment</title>
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2>Thank You For Your Order!</h2>
+      <form action="" method="post">
+        <h4>Biling Address/Delivery Address</h4>
+        <div class="input_group">
+          <div class="input_box">
+            <input type="text" placeholder="Full Name" required class="name" />
+          </div>
+          <div class="input_box">
+            <input
+              type="text"
+              placeholder="Name on Card"
+              required
+              class="name"
+            />
+          </div>
+        </div>
+        <div class="input_group">
+          <div class="input_box">
+            <input
+              type="email"
+              placeholder="Email Address"
+              required
+              class="name"
+            />
+          </div>
+        </div>
+        <div class="input_group">
+          <div class="input_box">
+            <input type="text" placeholder="Address" required class="name" />
+          </div>
+        </div>
+        <div class="input_group">
+          <div class="input_box">
+            <input
+              type="text"
+              placeholder="Cell Number"
+              required
+              class="number"
+            />
+          </div>
+        </div>
+        <!--Account Information End-->
+        <!--DOB & Gender Start-->
+        <div class="input_group">
+          <div class="input_box">
+            <h4>Date Of Birth</h4>
+            <input type="text" placeholder="DD" required class="dob" />
+            <input type="text" placeholder="MM" required class="dob" />
+            <input type="text" placeholder="YYYY" required class="dob" />
+          </div>
+        </div>
+        <!--DOB & Gender End-->
+        <!--Payment Details Start-->
+        <div class="input_group">
+          <div class="input_box">
+            <h4>Payment Details</h4>
+            <input type="radio" name="pay" class="radio" id="bc1" checked />
+            <label for="bc1"
+              ><span> <i class="fa fa-cc-visa"></i>Credit Card</span></label
+            >
+          </div>
+        </div>
+        <div class="input_group">
+          <div class="input_box">
+            <input
+              type="tel"
+              name=""
+              class="name"
+              placeholder="Card Number"
+              required
+            />
+          </div>
+        </div>
+        <div class="input_group">
+          <div class="input_box">
+            <input type="tel" name="" class="name" placeholder="CVC" required />
+          </div>
+        </div>
+        <div class="input_group">
+          <div class="input_box">
+            <div class="input_box">
+              <input type="number" placeholder="ExpMon" required class="name" />
+            </div>
+          </div>
+          <div class="input_box">
+            <input type="number" placeholder="ExpYear" required class="name" />
+          </div>
+        </div>
+        <div class="input_box">
+          <input
+            type="number"
+            placeholder="Enter Amount"
+            required
+            class="name"
+          />
+        </div>
+
+        <div class="input_group">
+          <p>
+            Please note! a delivery fee of R150 is required for your order to be
+            processed and delivered. See You Soon :)
+          </p>
+          <div class="input_box"><button type="submit">PAY NOW</button></div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
