@@ -1,3 +1,4 @@
+//images used//
 const product = [
   {
     id: 0,
@@ -55,6 +56,7 @@ const categories = [
     })
   ),
 ];
+// images box plus the price //
 let i = 0;
 document.getElementById("root").innerHTML = categories
   .map((item) => {
@@ -85,7 +87,7 @@ function delElement(a) {
   cart.splice(a, 1);
   displaycart();
 }
-
+// calculating the final price and adding to cart //
 function displaycart(a) {
   let j = 0,
     total = 0;
